@@ -1,0 +1,10 @@
+//
+/*
+* Anthony Silva
+* 8/20/2024
+* Fifth project
+*/
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("\n\n Whats your favorite sport?");
+        System.out.println("\n\n Mine is MMA! I wanna try it out one day.");
