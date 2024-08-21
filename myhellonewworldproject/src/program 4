@@ -1,0 +1,10 @@
+//
+/*
+* Anthony Silva
+* 8/20/2024
+* Forth project
+*/
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("\n\n I love video games!!");
+        System.out.println("\n\n Especially those JRPGS! My favorite!!");
