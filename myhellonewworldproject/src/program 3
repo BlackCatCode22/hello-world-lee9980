@@ -1,0 +1,10 @@
+//
+/*
+* Anthony Silva
+* 8/20/2024
+* Third project
+*/
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("\n\n Whats your favorite movie?");
+        System.out.println("\n\n Mine is John Wick, of course!!");
