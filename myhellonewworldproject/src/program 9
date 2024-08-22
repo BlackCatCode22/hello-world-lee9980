@@ -1,0 +1,14 @@
+//
+/*
+* Anthony Silva
+* 8/21/2024
+* ninth project
+*/
+public class Main {
+    public static void main(String[] args) {
+
+
+        String MyName = "Anthony";
+
+
+        System.out.println(MyName.toUpperCase());
