@@ -1,0 +1,47 @@
+// This is a chicken
+/*
+* Anthony Silva
++8/15/24
+* AddTwoints.Java
+ */
+//
+
+import java.util.Scanner; // import the scanner classs
+
+public class AddTwoints {
+    public static void main(String[] args) {
+        System.out.println(" \n\n welcome to the double int program !\n\n");
+
+
+        int firstNum = 0;
+        int secondNum = 0;
+        int SumOfBothNumbers = 0;
+
+        System.out.println("\n The Value Of SumOfBothNumbers is " + SumOfBothNumbers);
+
+        // create a scanner object
+        Scanner myScannerObject = new Scanner(System.in);
+
+        // Ask user for the first int
+        System.out.println("please enter a whole number: ");
+        firstNum = myScannerObject.nextInt();
+
+        //unit test for our first user input
+        System.out.println("\n the value of firstNum is: " + firstNum);
+
+
+        // Ask user for the second int
+        System.out.println("please enter a second number: ");
+        secondNum = myScannerObject.nextInt();
+
+        //unit test for our second user input
+        System.out.println("\n the value of secondNum is: " + secondNum);
+
+        // processing
+        // Add the two int inputs from the user.
+        // the total of firstNum and secondNum will be stored in
+        // the variable named: SumOfBothumbers
+
+        SumOfBothNumbers = firstNum + secondNum;
+        // output the value of the variable named; SumOfBothNumbers
+        System.out.println("\n the value of  is: SumOfBothNumbers " + SumOfBothNumbers);
