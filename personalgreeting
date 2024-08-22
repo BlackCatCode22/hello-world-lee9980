@@ -1,0 +1,58 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
+
+import java.util.Scanner;
+
+public class Main {
+
+
+    static void thehelloMethod() {
+        System.out.println("\n Hello from theHelloMethod() ! ");
+    }
+
+    //create a method that gets input
+    static void apersonalgreeting(String someName) {
+        System.out.println("\n Hello + " + someName + "How are you today?");
+    }
+
+    // create a method that gets twos intergers and returns their sum.
+    // Create two int parameters
+    static int sumTWOints(int num1, int num2){
+    int mySUM = 0;
+       mySUM = num1 + num2;
+
+       return mySUM;
+
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("\n Welcome to the methods!\n");
+
+        // Varaiables (memebers)
+        String theUserName = "";
+
+
+        // create a Scanner object for user input.
+        Scanner scanner = new Scanner(System.in);
+
+        // get the user name
+        System.out.println("\n ");
+        theUserName = scanner.nextLine();
+
+        // Call (invoke) our greeting method
+        apersonalgreeting( theUserName + "...some literal string...");
+
+        thehelloMethod();
+
+        // variable.
+        int aSum = 0;
+
+        //call our new sum method.
+        aSum = sumTWOints(3, 4);
+
+        System.out.println("\n This is the end of my program");
+    }
+
+}
