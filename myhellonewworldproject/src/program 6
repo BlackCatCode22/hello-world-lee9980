@@ -1,0 +1,10 @@
+//
+/*
+* Anthony Silva
+* 8/21/2024
+* sixth project
+*/
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("\n\n what's your favorite brand of chips?");
+        System.out.println("\n\n WHHHAAAAT?! YOU DON'T HAVE ONE?!.");
