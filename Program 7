@@ -1,0 +1,10 @@
+//
+/*
+* Anthony Silva
+* 8/21/2024
+* seventh project
+*/
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("\n\n What type of music do you listen too?");
+        System.out.println("\n\n RAP? i'm more of a R&B person actually!.");
