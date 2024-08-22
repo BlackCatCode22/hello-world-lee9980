@@ -1,0 +1,68 @@
+/// This is a chicken
+/*
+* Anthony Silva
++8/15/24
+* AddTwoints.Java
+ */
+//
+
+import java.util.Scanner; // import the scanner classs
+
+public class Largestofthree {
+    public static void main(String[] args) {
+        System.out.println(" \n\n welcome to the Largest of three int program !\n\n");
+
+
+        int firstNum = 0;
+        int secondNum = 0;
+        int thirdNum = 0;
+        int largestOfThree = 0;
+
+        System.out.println("\n The Value Of SumOfBothNumbers is " + largestOfThree);
+
+        // create a scanner object
+        Scanner myScannerObject = new Scanner(System.in);
+
+        // Ask user for the first int
+        System.out.println("please enter a First whole number: ");
+        firstNum = myScannerObject.nextInt();
+
+        //unit test for our first user input
+        System.out.println("\n the value of firstNum is: " + firstNum);
+
+
+        // Ask user for the second int
+        System.out.println("please enter a second whole number: ");
+        secondNum = myScannerObject.nextInt();
+
+        //unit test for our second user input
+        System.out.println("\n the value of secondNum is: " + secondNum);
+
+        // Ask user for the third int
+        System.out.println("please enter a Third whole number: ");
+        thirdNum = myScannerObject.nextInt();
+
+
+        // processing
+        // compare the inputs with nested if statement
+
+        if (firstNum > secondNum) {
+            if (firstNum > thirdNum) {
+                largestOfThree = firstNum;
+            } else {
+                largestOfThree = thirdNum;
+            }
+        }
+        else {
+            if (secondNum > thirdNum) {
+                largestOfThree = secondNum;
+
+            } else {
+                largestOfThree = thirdNum;
+            }
+        }
+
+
+        // output Largest of three
+        System.out.println("\n the largest of three is" + largestOfThree);
+    }
