@@ -1,0 +1,16 @@
+
+
+//
+/*
+* Anthony Silva
+* 8/21/2024
+* eighth project
+*/
+public class Main {
+    public static void main(String[] args) {
+
+        int Weight = 400;
+        String MyName = "Kenny";
+
+
+        System.out.println(MyName + Weight);
