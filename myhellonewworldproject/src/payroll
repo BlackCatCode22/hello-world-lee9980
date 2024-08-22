@@ -1,0 +1,73 @@
+import java.util.Hashtable;
+import java.util.Scanner;
+
+// dH 8/20/24
+/*
+* Payroll\\program.java
+*
+*input: User's name, weekly hours worked (no hours fractions), user's hourly payrate
+*
+*processing: total weekly pay including overtime if more than 40 hours were worked that week.
+*
+* Output: polite greeting to the user and regular pay and overtime pay
+*
+*
+*
+*/
+//
+
+import java.util.Scanner;
+
+
+public class PaywallProgram {
+    public static void main(String[] args) {
+        System.out.println("\n\n....welcome to payroll program...\n");
+
+        // variables used in this program
+        String userName = "";
+        int HoursWorked = 0;
+        int PayRate = 0;
+        int overTimeHours;
+
+        double hrlyPayRate = 0.0;
+        double weeklypaywithoutovertime = 0.0;
+        double overTimePay = 0.0;
+
+        // Say hello to the user and get user pay inforamtion.
+        // Get the user's name.
+        // Create a Scanner Object.
+        Scanner myscannerObj = new Scanner(System.in);
+
+        // get the user's name.
+        System.out.println("\n Please enter your name: ");
+        userName = myscannerObj.nextLine();
+
+        System.out.println("\n hello, " + userName  + ". How are you today? ");
+
+        // Get weekly hours worked from the user.
+        // Output statement prompting the user for hrs worked
+        System.out.println("\n please enter how many hours you worked this week \n(please use whole numbers): ");
+        // User the Scanner object to get input from this prompt, and store what was returned
+        // from your scanner object in a variable
+       HoursWorked = myscannerObj.nextInt();
+
+       // Create an output statemnet to the used echoing the user's input.
+
+        System.out.println("\n hey " + userName + " you worked: " + HoursWorked + " Hours this week!");
+
+        // processing
+        overTimeHours = HoursWorked = 40;
+        if (HoursWorked>40) {
+            overTimePay = overTimeHours + PayRate + 1.5;
+        }
+        else {
+            overTimePay = 0;
+        }
+        // Calculate weekly regular pay
+        if (HoursWorked >= 40) {
+            weeklypaywithoutovertime = hrlyPayRate * HoursWorked - 40
+        }
+
+
+    }
+}
