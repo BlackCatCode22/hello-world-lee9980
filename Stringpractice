@@ -1,0 +1,76 @@
+// dH 8/27/24
+// Stringpratice.java
+
+public class Stringpractice {
+    public static void main(String[] args) {
+
+        System.out.println("\nWelcome to my string practice program !\n");
+
+        // Create a string object
+        String myPracticeStr;
+        myPracticeStr = "Hello from my STRING practice program!";
+
+        System.out.println("\n myPracticeStr is : " + myPracticeStr );
+
+        // Use a few String methods
+        // a method is a object-oriented language name for a function\
+        // methods always have a pair of () attached to them
+        //
+        // Use the toLowerCase()
+        String myNewStr = "";
+
+        myNewStr = myPracticeStr.toUpperCase();
+
+        // prove it....
+        System.out.println(" myNewStr is: = " + myNewStr);
+
+        // toLowercase
+        myNewStr = myPracticeStr.toLowerCase();
+        System.out.println(" myNewStr is: = " + myNewStr);
+
+        // use the length method
+       // Create a int variable, because the length() method returns an int.
+        int myInt = 0;
+
+        // Find the length of our string object
+
+        myInt = myPracticeStr.length();
+        // prove it...
+        System.out.println("\n the length of " + myPracticeStr + " is " + myInt);
+
+        // .contains
+        boolean isitThere;
+       isitThere = myPracticeStr.contains("STR");
+       System.out.println( "\n The value of isitThere is: " + isitThere);
+
+       // charAt
+       char myChar;
+       int anotherInt = 4;
+        myChar = myPracticeStr.charAt(4);
+        // Output the result
+        System.out.println("\n The char at index " + anotherInt + " is " + myChar);
+
+        // .indexOf
+        int mySecondInt;
+
+        mySecondInt = myPracticeStr.indexOf("STR");
+        System.out.println("\n The index of STR is: " + mySecondInt);
+
+        // .lastindexof
+       int oneMoreInt;
+
+        oneMoreInt = myPracticeStr.lastIndexOf("m");
+        System.out.println("\n oneMoreInt is:" + oneMoreInt);
+
+        // SubString
+        String mylastStringObject;
+
+        mylastStringObject = myPracticeStr.substring(0,myPracticeStr.indexOf("STR"));
+        // Output that!
+        System.out.println("\n mylastStringObject is: " + mylastStringObject);
+
+
+
+
+    }
+}
