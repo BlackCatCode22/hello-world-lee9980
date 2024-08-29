@@ -1,0 +1,74 @@
+// dH /29/24
+/*
+*
+* LoopsAndArrays.java
+*
+* This program will use the for loop to loop through
+* a list of names stored in string array
+*
+*
+*
+*
+ */
+
+import java.util.Scanner;
+
+
+public class LoopsAndArrays {
+    public static void main(String[] args) {
+
+        // Create a Scanner object for user input.
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Welcome to my friendly for Loop program");
+
+        // Create a for loop that displays 'Hello There!' five times.
+
+        // the loop control variable of this for loop
+        // is named i (it means integer (whole number)).
+        // this loop control variable must be: initialized, checked, and changed.
+        for(int i = 0; i < 10; i++ ) {
+            System.out.println("\n the value of i is: " + i);
+        }
+
+        // create a while loop that does the same thing
+        int loopControlVariable = 0;
+        while (loopControlVariable < 10){
+            System.out.println("\n the value of i is: " + loopControlVariable);
+            // Change the loop control variable
+            loopControlVariable++;
+        }
+
+        // Create a string array of five words
+        // String[] name = new String[10];
+        String[] names = {"one",  "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"};
+
+        // Create an int array with 10 elements
+        int[] myNumbers =  new int[10];
+
+        // use a for oop t get ten whole numbers from the user
+        for (int i=0; i<10; i++){
+            System.out.println("please enter number " + (i+1));
+             myNumbers[i] = scanner.nextInt();
+        }
+
+        // Output the myNumbers[] array ........ with a for loop, using the length property
+        for (int i=0; i<10; i++){
+            System.out.println("the value of myNumbers[" + i + "] is: " + myNumbers[i]);
+        }
+
+        System.out.println(" one of our names is: " + names[9]);
+        // output the length of our array named name.
+        System.out.println("\n the length of our array 'names' is; " + names.length);
+
+
+
+        // Create a for loop that outputs all elements values in the names array.
+        for (int i=0; i < 5; i++) {
+            System.out.println("names[" + i + "] is.... " + names[i]);
+        }
+
+
+        System.out.println("\n This is the value of our program! \n");
+    }
+}
