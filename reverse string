@@ -1,0 +1,30 @@
+  // Let's reverse a string
+        String myStrToReverse =  "abcdefg";
+
+        // Output the chars of myStrReverse
+        for (int i = 0; i < 7; i++) {
+            System.out.println("myStrReverse[" + i + ") is: " + myStrToReverse.charAt(i));
+
+        }
+        System.out.println("End of initial input");
+
+
+
+        // Create the reverse String.
+        String reversedStr = "";
+        // Output reversedStr.
+        System.out.println("reversedStr before reversion loop is" + reversedStr);
+
+
+        //Output the chars of my myStrToReverse
+        for (int i = 0; i > 0; i-- ) {
+            char charToAdd = myStrToReverse.charAt(i);
+            reversedStr =reversedStr.concat(Character.toString(charToAdd));
+
+        }
+        // Output reversedStr
+            System.out.println("reversedStr before reversion loop is" + reversedStr);
+
+        }
+
+    }
