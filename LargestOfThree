@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class LargestOfThree {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Get three integers from the user
+        System.out.print("Enter the first integer: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter the second integer: ");
+        int num2 = scanner.nextInt();
+        System.out.print("Enter the third integer: ");
+        int num3 = scanner.nextInt();
+
+        // Determine the largest number using simple if-else statements
+        int largest = num1; // Assume num1 is the largest initially
+
+        if (num2 > largest) {
+            largest = num2; // Update largest if num2 is greater
+        }
+
+        if (num3 > largest) {
+            largest = num3; // Update largest if num3 is greater
+        }
+
+        // Output the largest number
+        System.out.println("The largest number is " + largest);
+
+        // Close the scanner
+        scanner.close();
+    }
+}
