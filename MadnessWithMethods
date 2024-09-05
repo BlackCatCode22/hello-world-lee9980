@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+class MadnessWithMethods {
+
+    // Method to get an integer from the user
+    public static int getAnIntFromTheUser() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter an integer: ");
+        return scanner.nextInt();
+    }
+
+    // Method to compare two integers
+    public static void compareTwoInts(int a, int b) {
+        if (a > b) {
+            System.out.println(a + " is greater than " + b);
+        } else if (a < b) {
+            System.out.println(a + " is less than " + b);
+        } else {
+            System.out.println(a + " is equal to " + b);
+        }
+    }
+
+    // Method to sum two integers
+    public static int sumTwoInts(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        // Get two integers from the user
+        System.out.println("Let's compare two integers and find their sum!");
+        int num1 = getAnIntFromTheUser();
+        int num2 = getAnIntFromTheUser();
+
+        // Compare the two integers
+        compareTwoInts(num1, num2);
+
+        // Calculate and display the sum of the two integers
+        int sum = sumTwoInts(num1, num2);
+        System.out.println("The sum of " + num1 + " and " + num2 + " is " + sum);
+    }
+}
+
+
