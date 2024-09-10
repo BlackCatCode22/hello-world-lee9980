@@ -1,0 +1,22 @@
+public class Student {
+    private static int numOfStudents = 0;
+
+    // Create a constructor for our new objects
+    public Student() {
+        numOfStudents++;
+    }
+
+    public static int getNumOfStudents()
+
+
+
+    // Give our student class a few fields
+    String Firstname;
+    String Lastname;
+    String major;
+    Double gpa;
+    int age;
+    boolean myProbation;
+
+
+
