@@ -1,0 +1,47 @@
+
+// As 9/12/24
+// Main.java
+
+import MyAnimals.Animals;
+import MyAnimals.dog;
+import MyAnimals.Cat;
+import MyStudent.Student;
+import MyStudent.App;
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.printf("\n Hello and welcome from the main! \n");
+
+        // Create a Student object.
+        Student student = new Student();
+
+        // create an object from a runnable class.
+        App app = new App();
+
+        // Use a method from the Student class
+        // i know that i have a static method on the student class
+        // and, i know how to call a staic class method
+        Student.sayHello();
+
+        // Out the number of animals
+        System.out.println("\n the number of animals is " + Animals.NumOfAnimals);
+
+
+        // Create a Car object
+        Cat cat = new Cat();
+        // Use a method that is available to the cat object named a cat
+        System.out.println("\n this sound is coming from the cat object named cat.....");
+        cat.aniamalSound();
+
+        // Create a dog object
+        dog Dog = new dog();
+        // Use a method that is available to the dog object named a dog
+        System.out.println("\n this sound is coming from the dog object named dog.....");
+        dog.aniamalSound();
+
+        // Out the number of animals
+        System.out.println("\n the number of animals is " + Animals.NumOfAnimals);
+
+    }
+}
