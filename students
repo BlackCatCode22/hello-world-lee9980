@@ -1,0 +1,15 @@
+package MyStudent;
+
+public class Student {
+    public static void sayHello() {
+        System.out.println("\n Hello from the student class! I am a static method and i belong in student class \n");
+    }
+
+
+
+
+    public void sayHl() {
+        System.out.println("\n hi there i must be from an object because i am not a static \n");
+    }
+
+}
