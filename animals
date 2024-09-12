@@ -1,0 +1,20 @@
+package MyAnimals;
+
+public class Animals {
+    // There is not a "static" keyword here, so...
+    // Will be Available to the animal objects.
+    // Create a static member named NumOfAnimals.
+    public static int NumOfAnimals = 0;
+
+    // Create a constructor
+    public Animals() {
+        NumOfAnimals++;
+    }
+
+
+
+
+    public static void aniamalSound() {
+        System.out.println(" bark ");
+    }
+}
